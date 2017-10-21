@@ -16,7 +16,7 @@ h1, h2, h3 {
 }
 
 h2, h3 {
-color: rgba(40,40,40,1);
+  color: rgba(40,40,40,1);
 
 }
 
@@ -27,7 +27,7 @@ h1 {
 
 }
 
-h1 + p {
+h1 + p  {
   color: rgba(0, 0, 0,.4);
   line-height: 30px;
 
@@ -36,4 +36,33 @@ h1 + p {
 p {
   font-size: 20px;
   line-height: 34px;
+}
+
+p + p {
+  margin-top: 28px;
+}
+h1 + p + p  {
+  margin-top: 33px;
+}
+
+a {
+color: inherit;
+text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #636363;
+}
+
+h2 {
+  margin-top: 34px;
+
+}
+
+h2 + p {
+  margin-top: 25px;
 }
