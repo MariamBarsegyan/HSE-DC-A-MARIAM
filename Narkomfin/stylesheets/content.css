@@ -34,7 +34,7 @@ h2 {
   margin-bottom: 3px;
 }
 
-h2 + p, li {
+h2 + p, li, blockquote {
   margin-top: 22px;
 }
 
@@ -44,8 +44,9 @@ h3 {
   margin-bottom: 3px;
 }
 
-p + p {
+p + p, p + blockquote {
   margin-top: 23px;
+  margin-bottom: 23px;
 }
 
 p, li, blockquote {
@@ -54,7 +55,6 @@ p, li, blockquote {
 }
 
 li {
-  margin-right: 20px;
   list-style-type: disc;
 }
 
@@ -81,4 +81,17 @@ a:hover {
 
 a:visited {
   color: #636363;
+}
+
+blockquote {
+ font-style: italic;
+}
+
+blockquote::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: black;
+
 }
