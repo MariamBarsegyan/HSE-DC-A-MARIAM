@@ -1,97 +1,114 @@
-body {
-  font-family: 'PT Sans', sans-serif;
-  }
-
-  article {
+article > * {
   width: 700px;
   margin: 0 auto;
-  }
+}
   /*background-image: url(../images/mockup.jpg);
 background-size: 800px 20624px;
 background-position: top center;
 background-repeat: no-repeat;*/
 
 
-h1, h2, h3 {
+article h1, article h2, article h3 {
   font-family: 'PT Sans Caption', sans-serif;
   font-weight: bold;
 }
 
-h1 {
+article p, article li, article blockquote{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  color: rgba (0, 0, 0,.8)
+
+}
+article h1 {
   margin-top: 70px;
   font-size: 40px;
   margin-bottom: 3px;
 }
 
-h1 + p {
+article h1 + p {
   color: rgba(0, 0, 0, .4);
   line-height: 27px;
 }
 
-h2 {
+article h2 {
   margin-top: 34px;
   font-size: 33px;
   margin-bottom: 3px;
 }
 
-h2 + p, li, blockquote {
+article h2 + p, article li, article blockquote {
   margin-top: 22px;
 }
 
-h3 {
+h3 + p {
+  margin-top: 34px;
+}
+
+article h3 {
   margin-top: 34px;
   font-size: 27px;
   margin-bottom: 3px;
 }
 
-p + p, p + blockquote {
+article p + p, article p + blockquote {
   margin-top: 23px;
   margin-bottom: 23px;
 }
 
-p, li, blockquote {
+article p, article li, article blockquote {
   font-size: 20px;
-  line-height: 34px;
+  line-height: 30px;
 }
-
+/*
 li {
   list-style-type: disc;
-}
+}*/
 
-p + p {
+article p + p {
   margin-top: 28px;
 }
 
-h1 + p + p {
+article h1 + p + p {
   margin-top: 33px;
 }
 
-p + img {
+article p + img {
   margin-top: 33px;
 }
 
-a {
+article a {
   color: inherit;
   text-decoration: underline;
 }
 
-a:hover {
+article a:hover {
   text-decoration: inherit;
 }
 
-a:visited {
-  color: #636363;
-}
-
-blockquote {
+article blockquote {
  font-style: italic;
 }
 
-blockquote::before {
+article blockquote::before {
   content: '';
+  position: absolute;
+  top: 0;
+  left: -20px;
   display: block;
   width: 10px;
   height: 10px;
   background: black;
 
+}
+
+article li {
+  list-style-type: disc;
+  margin: 17px 0 17px 30px;
+}
+
+article img {
+  display: block;
+  width: 1020px;
+  margin: 80px auto 80px;
 }
